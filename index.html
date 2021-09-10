@@ -1,240 +1,155 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--leads api-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        var domain = "https://enq.hantecgroup.com/mkt-lead";
-        var username = "demo001";
-        var password = "2MgonKtaMIM8I0VD";
-        var coCode = "HAU";
-        var campaignId = "HAURef2021";
-        var redirectUrl = "https://hantec-au133.com/campaign/welcome-bonus/success.html";
-    </script>
-    <script src="./mkt-lead.js"></script>
-    <!--end leads api-->
-    <title>HAU - IB프로그램</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Get your $3100 welcome offer at Hantec!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-    <!--header-->
-    <div class="header sticky-md-top">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-6">
-                    <a class="logo" target="_blank" href="https://www.hantec-au.com"><img class="img-fluid" src="assets/images/logo.png" alt="logo" /></a>
-                </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <a class="btn header-btn" href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-01f.svg" /> &nbsp;1:1채팅</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 20px 0 30px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#EAEFF1">
+                    <!--<tr>
+                        <td align="center" style="padding: 0 0 0 0;">
+                            <a href="https://www.hantec-au.com/kr/index.html" target="_blank"><img src="https://www.hantec-au.com/edm/20201204/banner.png" alt="HAU 한국시장 그랜드 오픈. 신규 고객을 위한 이벤트에 참여를 초대합니다." width="600" height="auto" style="display: block;"></a>
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td style="padding: 40px 30px 10px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    <!--banner-->
-    <div class='banner'>
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-6'>
-                    <div class='banner-content'>
-                        <h1>IB프로그램</h1>
-                        <p style="font-size: large;">만약 당신이 외환 및 금융업에서 잠재적인 고객을 개발하고 있거나 계획하고 있다면, 저희 HAU은 당신만을 위한 IB프로그램 패키지를 맞춰서 만들 수 있습니다. </br>
-                            </br>글로벌 시장을 선도하는 업체에 고객을 소개하고 안정적으로 수입을 창출할 의향이 있으면 다음 신청양식을 작성해 주십시오.</p>
-                    </div>
-                </div>
-                <div class='col-md-1'></div>
-                <div class='col-md-4'>
-                    <div class='banner-form'>
-                        <div class='form-card shadow-lg mb-5'>
+                                <tr>
+                                    <td align="center" style="padding: 0 0 30px 0;">
+                                        <img src="edm_image/logo-main.png" alt="LOGO" width="48" height="48" style="display: block;">
+                                    </td>
+                                </tr>
 
-                            <form id='mktLeadInsertionForm' class="row g-3">
+                                <tr>
+                                    <td align="center" style="padding: 0 0 30px 0; color: #231815; font-family: Arial, sans-serif; font-size: 26px;">
+                                        Welcome <b>Danny</b>!
+                                    </td>
+                                </tr>
 
-                                <div class="col-md-12">
-                                    <label for="name" class="form-label">이름<span style="color: #e26f3d;">*</span></label>
-                                    <input type="text" class="form-control" id="name" name='name'>
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="extraInfo[0].key" class="form-label">국가/ 지역<span style="color: #e26f3d;">*</span></label>
-                                    <input type="text" class="form-control" id="extraInfo[0].key" name='extraInfo[0].key'>
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="tel" class="form-label">전화번호<span style="color: #e26f3d;">*</span></label>
-                                    <input type="text" class="form-control" id="tel" name="tel">
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="email" class="form-label">이메일<span style="color: #e26f3d;">*</span></label>
-                                    <input type="text" class="form-control" id="email" name="email">
-                                </div>
-                                <div id="mktLeadInsertionErrDiv">
-                                    <p id="error" style="color:red;"></p>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <input type="submit" class="btn btn-primary" value='HAU파트너가 되기'>
-                                </div>
-                                <div class="col-12">
-                                    <p class='p2'>HAU는 모든 고객의 프라이버시를 존중합니다. 위와 같은 내용을 "제출"하면, 위와 같이 제공된 개인정보를 사용하여 문의하신 제품 및 서비스에 대한 답변을 드린것을 동의합니다.</p>
-                                    <p class='p2'><a target="_blank" href='https://www.hantec-au.com/kr/terms.html#01'>리스크 공시</a> | <a target="_blank" href='https://www.hantec-au.com/kr/terms.html#04'>프라이버시 보호 정책</a></p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-1'></div>
-            </div>
-        </div>
-    </div>
+                                <tr>
+                                    <td style="padding: 30px 30px 30px 30px;" bgcolor="#FFF">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 30px 0 30px;">
+                                            <tr>
+                                                <td align="center" style="padding: 20px 20px 30px 20px; color: #231815; font-family: Arial, sans-serif; font-size: 26px; line-height: 35px;">
+                                                    Let's create your ac in 3 mins to grab the welcome offer $100 credit.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="edm_image/ill.png" alt="LOGO" width="380" height="210" style="display: block;">
+                                                </td>
+                                            </tr>
 
-    <!--intro-->
-    <div class='intro mg'>
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-6'>
-                    <h2>IB(브로커 소개인)이란?</h2>
-                    <p class='p3'>Introducing Broker(IB)은 다른 회사에 신규 고객을 소개하는 개인 또는 사업체를 말합니다. 쌍방의 비즈니스 성장을 촉진하기 위해 양 당사자간 파트너십입니다. 이 경우 IB는 HAU에 신규 고객을 소개하고 그 대가로 HAU는 IB에게 일정한 금액을 지급받습니다.</p>
-                </div>
-                <div class='col-md-6'>
-                    <h2>신규 고객을 어떻게 소개하나?</h2>
-                    <p>IB는 자신의 웹사이트 또는 마케팅 채널을 통해 HAU에 고객을 소개합니다. 컨텐츠에 고유 링크를 삽입하고 IB본인 웹사이트 페이지에HAU 배너를 배치하면 됩니다. 고객이 배너를 클릭하여 HAU에 등록한다면 고객을 소개한 것이 됩니다.
-                        </br>
-                        </br>
-                        또한, HAU의 고유 링크를 포함한 이메일, SNS 게시물, 마케팅 캠페인 등을 활용 할 수도 있습니다. HAU는 필요한 모든 것은 제공하므로 IB는 최선을 다하는 것에 집중할 수 게 노력하겠습니다.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+                                            <tr>
+                                                <td align="center" style="padding: 35px 0 35px 0;">
+                                                    <table cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td style="border-radius: 5px;" bgcolor="#1A88CA">
+                                                                <a href="https://enq.hantec-au.com/live-acc-reg-hau2/reg.htm?siteLanguage=en_US" target="_blank" style="padding: 15px 35px 15px 35px; border: 1px solid #1A88CA; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; display: inline-block;">
+                                                                    <b>One step to $100 credit</b>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
 
-    <!--point-->
-    <div class='point mg2'>
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-6'>
-                    <div class='point-l'>
-                        <img src='assets/images/pad.png' class='img-fluid'>
-                    </div>
-                </div>
-                <div class='col-md-6'>
-                    <div class='point-r'>
-                        <div class='container'>
-                            <div class='row pr'>
-                                <div class='col-md-6 point-b'>
+                                            <tr>
+                                                <td style="padding: 0 0 15px 0; color: #7F8184; font-family: Arial, sans-serif; font-size: 12px; line-height: 30px;">
+                                                    By accepting our offer, I hereby agree Hantec will refer me to a suitable subsidiary of the Group to open an account based on my residence.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
 
-                                    <h4><img src="assets/images/ib-icon-1.png"> 즉시 커미션 지급</h4>
-                                    <p>우수한 커미션 비율, 다단계 판매식 리베이트 단계, 즉시 결제 시스템, 우수한 출입금 시스템.</p>
-                                </div>
-                                <div class='col-md-6 point-b'>
-                                    <h4><img src="assets/images/ib-icon-2.png"> 기술 지원</h4>
-                                    <p>세계 최고의 금융 시장 기술 분석 TRADING CENTRAL와의 콜라보레이션을 통해, 투자자 개개인을 위해 즉시 금융시장 기술 분석 서비스를 무료로 제공한다.</p>
-                                </div>
-                                <div class='col-md-6 point-b'>
-                                    <h4><img src="assets/images/ib-icon-3.png"> 탁월한 지원</h4>
-                                    <p>다양한 정기 마케팅 활동, 주류 재경매체의 온라인 광고 보급, 실시간 홈페이지에서 시장 홍보 자료의 다운로드 및 업데이트, 업계 유명 분석가의 전문적인 투자 조언 제공.</p>
-                                </div>
-                                <div class='col-md-6 point-b'>
-                                    <h4><img src="assets/images/ib-icon-4.png"> 활동 지원</h4>
-                                    <p>IB의 활동 및 투자 강좌 등 각종 활동을 전폭적으로 후원, 풍부한 이벤트 선물 및 홍보 자료 지원.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <tr>
+                                    <td style="padding: 15px 0 15px 0;"></td>
+                                </tr>
 
-    <!--step-->
-    <div class='step mg3'>
-        <div class='container'>
-            <div class='row text-center'>
-                <div class='col-md-4'>
-                    <h1>01</h1>
-                    <p>고객 상담원 연락하거나 신청양식을</br>작성하여 기본 정보를 제출하다.</p>
-                </div>
-                <div class='col-md-4'>
-                    <h1>02</h1>
-                    <p>HAU의 연락을 기다리며,</br>IB 프로그램 사항에 대해 토론하다.</p>
-                </div>
-                <div class='col-md-4'>
-                    <h1>03</h1>
-                    <p>협의서에 서명하여</br>정식으로 합작을 시작하다.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <tr>
+                                    <td style="padding: 30px 0 30px 0;" bgcolor="#FFF">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 30px 0 30px;">
+                                            <tr>
+                                                <td align="center" style="padding: 20px 20px 10px 20px; color: #231815; font-family: Arial, sans-serif; font-size: 26px; line-height: 35px;">
+                                                    How to get $3,000 more?
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 0 0 20px 0; color: #595757; font-family: Arial, sans-serif; font-size: 16px; line-height: 35px;">
+                                                    Get $3,000 cash bonus by deposit and trade.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0 0 0 0; color: #595757; font-family: Arial, sans-serif; font-size: 16px; line-height: 35px;">
+                                                    <ol>
+                                                        <li>
+                                                            Make deposit to redeem deposit credit up to USD 3,000
+                                                        </li>
+                                                        <li>
+                                                            Make transaction
+                                                        </li>
+                                                        <li>
+                                                            Achieve required transaction lots to convert credit to cash bonus
+                                                        </li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
 
-    <!--whyus-->
-    <div class='whyus mg'>
-        <div class='container'>
-            <div class='row text-center'>
-                <h2>HAU, 당신의 사업 발전을 돕는 든든한 후원자</h2>
-            </div>
-            <div class='row'>
-                <div class='col-md-6'>
-                    <p><img src="assets/images/tick-green.svg"> 31년의 유구한 역사로 전 세계 14개국에 걸쳐 19개 도시에 거점을 두고 있다.</p>
-                </div>
-                <div class='col-md-6'>
-                    <p><img src="assets/images/tick-green.svg"> 쉴 새 없이 선보이는 마케팅 & 프로모션 혜택으로 고객의 눈길을 사로잡는다.</p>
-                </div>
-                <div class='col-md-6'>
-                    <p><img src="assets/images/tick-green.svg"> 700명이 넘는 직원들이 고객에게 필요한 서비스를 시시각각 제공한다.</p>
-                </div>
-                <div class='col-md-6'>
-                    <p><img src="assets/images/tick-green.svg"> 다양한 거래 소프트웨어로 고객의 요구를 만족시키다.</p>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-12 text-center'>
-                    <a href="#"><button class="btn btn-outline-primary btnb">신청양식 작성</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
+                                        </table>
+                                    </td>
+                                </tr>
 
-
-    <!--footer-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>
-                        경고 : 파생상품 거래는 높은 수준의 리스크 있으니 투자자는 투자할때 고려함에 있어서 자신의 능력을 중시해야 합니다. 투자는 손익 또는 손해가 있으니, 투자자는 이로 인해 전체 원금을 손실할 수 있습니다. 보증금 거래가 모든 투자자에게 적합한 것은 아니며 거래 전 관련 리스크를 완전히 알고 계시는지 확인하시기 바랍나다.
-                    </p>
-                </div>
-            </div>
-            <div class="row text-center contact">
-                <div class="col-3">
-                    <a href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-01.svg" /></a>
-                    <p>온라인 고객 서비스</p>
-                </div>
-                <div class="col-3">
-                    <a href="javascript:void(window.open('http://pf.kakao.com/_sxkxhqK/chat','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-03.svg" /></a>
-                    <p>Kakao Talk</p>
-                </div>
-                <div class="col-3">
-                    <img src="assets/images/contact-icon-04.svg" />
-                    <p>dm@hantecmarkets.com</p>
-                </div>
-                <div class="col-3">
-                    <img src="assets/images/contact-icon-02.svg" />
-                    <p>+82 220236515</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-12">
-                    <p>
-                        <a target="_blank" href="https://www.hantec-au.com/">HAU 홈페이지로 돌아가기</a> |
-                        <a target="_blank" href="https://www.hantec-au.com/kr/terms.html#04">프라이버시 보호 정책</a> |
-                        <a target="_blank" href="https://www.hantec-au.com/kr/terms.html#02">면책 성명</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <tr>
+                                    <td style="padding: 20px 0px 30px 0px; color: #7F8184; font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;">
+                                        <tr>
+                                            <td style="padding: 0 0 15px 0; color: #7F8184; font-family: Arial, sans-serif; font-size: 13px; line-height: 17px;">
+                                                The promotion period ends on the email is sent after one month.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 0 0 15px 0; color: #7F8184; font-family: Arial, sans-serif; font-size: 13px; line-height: 17px;">
+                                                Hantec reserves the final right to suspend, modify or terminate this event and/or any of the terms and conditions without prior notice. In case of dispute, the decision of Hantec shall be final.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 0 0 15px 0; color: #7F8184; font-family: Arial, sans-serif; font-size: 13px; line-height: 17px;">
+                                                Please do not reply this email. If you wish to unsubscribe, please <a href="#" style="color: #60CDF1;">click here.</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 0 0 20px 0; color: #7F8184; font-family: Arial, sans-serif; font-size: 13px; line-height: 17px;">
+                                                Risk warning: Margin trading has a high risk, and investors need to depend on their own ability when considering the investment amount.
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px 0 15px 0;">
+                                        <tr>
+                                            <td width="20%">
+                                                <img src="edm_image/logo.png" alt="HAU" width="31px" height="30px" style="display: block;" />
+                                            </td>
+                                            <td width="80%" align="right" style="color: #C9CACA; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px;">
+                                                © Copyright@2021 Hantec. All rights reserved.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </tr>
+                            </table>
+                    </tr>
+        </tr>
+        </table>
+        </td>
+        </tr>
+    </table>
 </body>
 
 </html>
