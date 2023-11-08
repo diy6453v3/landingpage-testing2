@@ -99,7 +99,7 @@ p {
 
 .banner-content {
     color: #fff;
-    margin: 60px 0 20px 0;
+    margin: 80px 0 20px 0;
 }
 
 @media (max-width: 1230px) {
@@ -113,6 +113,7 @@ p {
     padding: 35px 30px;
     border-radius: 15px;
     font-size: 0.8rem;
+    margin-top: 20px;
 }
 
 .form-control {
@@ -266,10 +267,11 @@ p {
 }
 
 .warning {
-    background: #000;
+    background: rgba(0, 0, 0, .3);
     color: #fff;
     padding: 5px 0;
     font-size: 0.9rem;
+    position: fixed;
 }
 
 .form-label {
@@ -344,4 +346,50 @@ h2 {
     .shotcon {
         margin-bottom: 30px;
     }
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.isocert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardslogo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.awardslog {
+    display: flex;
+}
+
+.awardslogo span img {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    max-height: 70px;
+    max-width: 100%;
+}
+
+.win1 {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.win2 {
+    padding: 30px 0;
+    background: #666;
+}
+
+.win-flex {
+    display: flex;
+    align-items: center;
+}
+
+.ft-btn {
+    padding: 15px 20px;
 }
