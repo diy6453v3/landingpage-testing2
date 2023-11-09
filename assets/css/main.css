@@ -422,7 +422,7 @@ h2 {
     .compare-img-pc {
         display: none;
     }
-    compare-img-m {
+    .compare-img-m {
         display: block;
     }
 }
